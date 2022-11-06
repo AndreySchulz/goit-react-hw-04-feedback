@@ -33,7 +33,7 @@ export default function App() {
   useEffect(() => {
     setTotal(good + neutral + bad);
     setCountPositiveFeedbackPercentage((good / (total || 1)) * 100);
-  }, [bad, good, neutral]);
+  }, [bad, good, neutral, total]);
 
   // countTotalFeedback = () => {
   //   return Object.values(this.state).reduce((acc, value) => {
